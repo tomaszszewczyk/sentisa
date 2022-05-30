@@ -16,9 +16,12 @@ interface CardProps {
 
 const Card: FC<CardProps> = ({icon, alt, text}) => {
     return (
-        <Stack alignItems={"center"} direction={{lg: 'column', md: 'row'}} gap={{md: '32px', sm: '16px'}} flexShrink={0}>
+        <Stack alignItems={"center"}
+               direction={{lg: 'column', md: 'row'}}
+               gap={{md: '16px', sm: '16px'}}
+               flexShrink={0}>
             <Box width={{md: 'unset', sm: '32px'}}>
-            <Image src={icon} alt={alt}/>
+                <Image src={icon} alt={alt}/>
             </Box>
             <Typography component='p' variant={'h3'}>{text}</Typography>
         </Stack>
@@ -27,7 +30,8 @@ const Card: FC<CardProps> = ({icon, alt, text}) => {
 
 export const Manufacturing = () => {
     return (
-        <Stack direction={'row'} gap={{lg: '128px', md: '64px', sm: '16px'}} alignItems={{lg: 'center', sm: 'flex-start'}}>
+        <Stack direction={'row'} gap={{lg: '128px', md: '64px', sm: '16px'}}
+               alignItems={{lg: 'center', sm: 'flex-start'}}>
             <VerticalHeader text={'Manufacturing'}/>
 
             <Stack gap={{lg: '128px', md: '64px', sm: '32px'}} width={'100%'}>
@@ -58,7 +62,7 @@ export const Manufacturing = () => {
                       justifyContent={{lg: 'space-between', sm: 'space-around'}}
                       spacing={'32px'}>
                     <Grid item lg={4} sm={12}>
-                        <Stack gap={'32px'}>
+                        <Stack gap={{sm: '32px', md: '64px'}}>
                             <Card icon={logisticIcon}
                                   alt={'Roadsigns'}
                                   text={'Logistics'}/>
@@ -73,7 +77,7 @@ export const Manufacturing = () => {
                               text={'Your product'}/>
                     </Grid>
                     <Grid item lg={4} sm={12}>
-                        <Stack gap={'32px'}>
+                        <Stack gap={{sm: '32px', md: '64px'}}>
                             <Card icon={smartcityIcon}
                                   alt={'Smart city'}
                                   text={'Smart city'}/>
@@ -84,7 +88,6 @@ export const Manufacturing = () => {
                     </Grid>
                 </Grid>
             </Stack>
-
 
 
         </Stack>

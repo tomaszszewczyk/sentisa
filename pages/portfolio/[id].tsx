@@ -24,7 +24,7 @@ const Project: NextPage<ProjectPageProps> = ({project, other, source}) => {
         <ThemeProvider theme={theme}>
             <CssBaseline/>
             <HtmlHead
-                title={'Iguana Architecture - ' + project.title}
+                title={'Sentisa - ' + project.title}
                 description={project.desc}/>
 
             <SkipLink/>

@@ -28,7 +28,7 @@ const Contents = () => {
                 </Grid>
             </Grid>
 
-            <Grid container justifyContent={'center'} spacing={'8px'}>
+            <Grid container justifyContent={'center'} alignItems={'center'} spacing={'8px'}>
                 <Grid item>
                     <Typography sx={{textAlign: 'center'}}>
                         Designed and developed by

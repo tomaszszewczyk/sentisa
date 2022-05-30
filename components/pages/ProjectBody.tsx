@@ -45,6 +45,7 @@ export const ProjectBody: FC<BlogBodyProps> = ({project, source}) => {
             </Box>
             <Container maxWidth={'lg'}>
                 <Stack>
+                    {/*@ts-ignore*/}
                     <MDXRemote {...source} components={{img, h1}}/>
                 </Stack>
             </Container>

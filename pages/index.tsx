@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <ThemeProvider theme={theme}>
             <CssBaseline/>
             <HtmlHead
-                title={'Sentisa - Your product, Our technology'}
+                title={'Sentisa - Your Product, Our Technology'}
                 description={
                     'At Sentisa we offer an idea to product support for our customers. With passion we continue ' +
                     'not only to develop tailor made solutions which include: electronics hardware, embedded software, ' +
