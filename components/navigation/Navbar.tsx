@@ -13,7 +13,7 @@ export const Navbar = () => {
                     <Box maxWidth={'150px'}>
                         <ImageLink label={'Przejdź na stronę główną'}
                                    src={logo}
-                                   alt={'Logo Sentisa'}
+                                   alt={'Sentisa logo'}
                                    url={'/'}/>
                     </Box>
                     <Navigation links={[

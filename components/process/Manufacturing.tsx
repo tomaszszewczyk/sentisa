@@ -69,7 +69,7 @@ export const Manufacturing = () => {
                     </Grid>
                     <Grid item lg={4} sm={12}>
                         <Card icon={bulbIcon}
-                              alt={'Żarówka'}
+                              alt={'Bulb'}
                               text={'Your product'}/>
                     </Grid>
                     <Grid item lg={4} sm={12}>

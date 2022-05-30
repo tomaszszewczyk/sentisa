@@ -28,7 +28,7 @@ const Comment = () => {
 const CTA = () => {
     return (
         <Box>
-            <ButtonLink href={'/kontakt#contact-form'} variant={'contained'}>
+            <ButtonLink href={'/contact#contact-form'} variant={'contained'}>
                 {'Contact'}
             </ButtonLink>
         </Box>

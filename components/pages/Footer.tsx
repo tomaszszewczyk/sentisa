@@ -10,20 +10,20 @@ const Contents = () => {
             <Grid container columns={12} spacing={'32px'} alignItems={'flex-start'} flexWrap={'wrap'}>
                 <Grid item md={12} sm={12}>
                     <Image src={logo}
-                           alt={'Logo Sentisa'}/>
+                           alt={'Big Sentisa logo'}/>
                 </Grid>
                 <Grid item md={4} sm={12}>
                     <Stack>
-                        <Typography component={'h3'} variant={'h5'}>Sentisa sp. z o. o.</Typography>
+                        <Typography component={'h1'} variant={'h5'}>Sentisa sp. z o. o.</Typography>
                         <Typography>ul. Brązownicza 4<br/>30-142 Kraków</Typography>
                     </Stack>
                 </Grid>
                 <Grid item md={4} sm={12}>
-                    <Typography component={'h3'} variant={'h5'}>Phone</Typography>
+                    <Typography component={'h1'} variant={'h5'}>Phone</Typography>
                     <Typography>+48 501 314 390</Typography>
                 </Grid>
                 <Grid item md={4} sm={12}>
-                    <Typography component={'h3'} variant={'h5'}>Email</Typography>
+                    <Typography component={'h1'} variant={'h5'}>Email</Typography>
                     <Typography>biuro@sentisa.com</Typography>
                 </Grid>
             </Grid>
@@ -45,10 +45,12 @@ const Contents = () => {
 
 export const Footer = () => {
     return (
-        <Box>
-            <Container maxWidth={'xl'} sx={{pt: '100px', pb: '64px'}}>
-                <Contents/>
-            </Container>
-        </Box>
+        <footer>
+            <Box>
+                <Container maxWidth={'xl'} sx={{pt: '100px', pb: '64px'}}>
+                    <Contents/>
+                </Container>
+            </Box>
+        </footer>
     )
 }

@@ -66,6 +66,11 @@ export const theme = createTheme( {
         h5: {
             fontFamily: 'Roboto',
         },
+        h6: {
+            fontFamily: 'Roboto',
+            fontSize: '30px',
+            fontWeight: '600'
+        },
         subtitle1: {
             fontFamily: 'Roboto',
             fontWeight: '400',

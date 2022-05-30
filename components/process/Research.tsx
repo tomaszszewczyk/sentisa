@@ -31,9 +31,9 @@ export const Research = () => {
             <Grid container spacing={{md: '64px', sm: '32px'}} alignItems={'center'}>
                 <Grid item lg={6} sm={12} order={{lg: 1, sm: 2}}>
                     <Stack gap={{md: '64px', sm: '24px'}}>
-                        <Card icon={bulbIcon} alt='Żarówka reprezentująca pomysł' text={'Your product idea'}/>
-                        <Card icon={brainIcon} alt='Mózg reprezentujący pracę umysłową' text={'Design thinking'}/>
-                        <Card icon={toolsIcon} alt='Narzędzie reprezentujące pomysł' text={'Solution architecture'}/>
+                        <Card icon={bulbIcon} alt='Bulb' text={'Your product idea'}/>
+                        <Card icon={brainIcon} alt='Brain' text={'Design thinking'}/>
+                        <Card icon={toolsIcon} alt='Toolset' text={'Solution architecture'}/>
                     </Stack>
                 </Grid>
                 <Grid item lg={6} sm={12} order={{lg: 2, sm: 1}}>

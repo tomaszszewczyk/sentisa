@@ -68,7 +68,7 @@ const Data = () => {
 
                 <Box pt={'32px'}>
                     <Image src={logo}
-                           alt={'Logo Sentisa'}/>
+                           alt={'Sentisa conract invitation'}/>
                 </Box>
             </Stack>
         </Stack>

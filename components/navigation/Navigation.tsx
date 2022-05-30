@@ -48,7 +48,7 @@ const MobileMenu: FC<NavigationProps> = ({links}) => {
                         <Box maxWidth={'150px'}>
                             <ImageLink label={'Przejdź na stronę główną'}
                                        src={logo}
-                                       alt={'Logo Sentisa'}
+                                       alt={'Sentisa logo'}
                                        url={'/'}/>
                         </Box>
                         <Button onClick={() => setOpened(false)}>

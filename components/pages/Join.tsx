@@ -38,7 +38,7 @@ export const Join = () => {
 
                 <Stack p={{md: '64px', sm: '16px'}} gap={'64px'}>
                     <Card icon={bulbIcon}
-                          alt={'Bulb icon'}
+                          alt={'Idea bulb'}
                           text={'Electronics design'}
                           desc={'Move from project assumptions and ideas to integrated circuits and components that would realize them'}
                     />

@@ -1,5 +1,5 @@
 import {MDXRemote, MDXRemoteSerializeResult} from "next-mdx-remote";
-import {FC} from "react";
+import {FC, ReactNode} from "react";
 import {Container, Stack, Typography} from "@mui/material";
 import {Box} from "@mui/system";
 import Image from 'next/image'
@@ -24,6 +24,9 @@ const img: FC = (props) => {
     </Stack>
 }
 
+const h1: FC<{children: ReactNode}> = ({children}) =>
+    <Typography component={'h2'} variant={'h6'}>{children}</Typography>
+
 interface BlogBodyProps {
     project: Project
     source: MDXRemoteSerializeResult
@@ -42,7 +45,7 @@ export const ProjectBody: FC<BlogBodyProps> = ({project, source}) => {
             </Box>
             <Container maxWidth={'lg'}>
                 <Stack>
-                    <MDXRemote {...source} components={{img}}/>
+                    <MDXRemote {...source} components={{img, h1}}/>
                 </Stack>
             </Container>
         </>
