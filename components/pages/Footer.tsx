@@ -14,16 +14,16 @@ const Contents = () => {
                 </Grid>
                 <Grid item md={4} sm={12}>
                     <Stack>
-                        <Typography component={'h1'} variant={'h5'}>Sentisa sp. z o. o.</Typography>
+                        <Typography component={'h2'} variant={'h5'}>Sentisa sp. z o. o.</Typography>
                         <Typography>ul. Brązownicza 4<br/>30-142 Kraków</Typography>
                     </Stack>
                 </Grid>
                 <Grid item md={4} sm={12}>
-                    <Typography component={'h1'} variant={'h5'}>Phone</Typography>
+                    <Typography component={'h2'} variant={'h5'}>Phone</Typography>
                     <Typography>+48 501 314 390</Typography>
                 </Grid>
                 <Grid item md={4} sm={12}>
-                    <Typography component={'h1'} variant={'h5'}>Email</Typography>
+                    <Typography component={'h2'} variant={'h5'}>Email</Typography>
                     <Typography>biuro@sentisa.com</Typography>
                 </Grid>
             </Grid>

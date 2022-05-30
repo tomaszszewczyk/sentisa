@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: sentisa-pod
-          image: ghcr.io/tomaszszewczyk/sentisa:v0.0.2
+          image: ghcr.io/tomaszszewczyk/sentisa:v0.0.4
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
