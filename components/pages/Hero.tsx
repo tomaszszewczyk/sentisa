@@ -1,7 +1,7 @@
 import {Container, Stack, Typography, useMediaQuery} from "@mui/material";
 import {Box, useTheme} from "@mui/material";
 import Image from 'next/image.js'
-import heroPicture from '../../public/img/hero.svg'
+import heroPicture from '../../public/img/hero.png'
 import {ButtonLink} from "../navigation/ButtonLink";
 
 const Slogan = () => {
@@ -40,25 +40,26 @@ const Picture = () => {
         <Box flexShrink={0}
              sx={{}}
         >
-            <Image src={heroPicture} alt={'Stanowsko pracy księgowego'}/>
+            <Image src={heroPicture} alt={'Insides of a computer'}/>
         </Box>
     )
 }
 
 export const Hero = () => {
-    const theme = useTheme()
-    const small = useMediaQuery(theme.breakpoints.down('md'))
-
     return (
         <Container maxWidth={'xl'}>
-            <Stack pt='150px' direction={small ? 'column' : 'row'} alignItems={'center'} gap={small ? '32px' : '0'}>
-                <Stack gap={'32px'} order={2} flex={1}>
+            <Stack pt={{sm: '50px', lg: '150px'}}
+                   direction={{sm: 'column', md: 'row'}}
+                   alignItems={{sm: 'flex-start', md: 'center'}}
+                   gap={'32px'}
+                   justifyContent={'space-between'}>
+                <Stack gap={'32px'} order={2} flex={1} maxWidth={'550px'}>
                     <Slogan/>
                     <Comment/>
                     <CTA/>
                 </Stack>
 
-                <Box order={small ? 1 : 3} flex={1}>
+                <Box order={{sm: 1, md: 3}} flex={1} maxWidth={'500px'} alignSelf={'center'}>
                     <Picture/>
                 </Box>
             </Stack>

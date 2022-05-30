@@ -76,30 +76,32 @@ const ProjectsList: FunctionComponent<ProjectsListProps> = ({projects, header, h
     const theme = useTheme();
 
     return (
-        <Container maxWidth='lg'>
-            <Box sx={{
-                pb: '100px',
-                mt: '120px',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'flex-start',
-                [theme.breakpoints.down('lg')]: {
-                    gap: '64px',
-                },
-                [theme.breakpoints.up('lg')]: {
-                    gap: '84px',
-                },
-            }}>
-                {!!header && (
+        <Box sx={{
+            pb: '100px',
+            mt: '120px',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'flex-start',
+            [theme.breakpoints.down('lg')]: {
+                gap: '64px',
+            },
+            [theme.breakpoints.up('lg')]: {
+                gap: '84px',
+            },
+        }}>
+            {!!header && (
+                <Container maxWidth={'xl'}>
                     <Typography variant={'h2'} pt={'32px'}>
                         {header}
                     </Typography>
-                )}
+                </Container>
+            )}
+            <Container maxWidth={'lg'}>
                 <Stack alignItems={'center'} gap={'72px'} width={'100%'}>
                     {projects.map((p, i) => <Entry key={i} project={p} headerComponent={headerComponent}/>)}
                 </Stack>
-            </Box>
-        </Container>
+            </Container>
+        </Box>
     )
 }
 

@@ -9,8 +9,8 @@ import {FC, ReactNode} from "react";
 
 const GreyCard: FC<{ children: ReactNode }> = ({children}) => {
     return (
-        <Card sx={{p: '32px', bgcolor: 'grey', height: '100%', border: 'none'}}>
-            <Stack justifyContent={'center'} height={'100%'}>
+        <Card sx={{p: '32px', bgcolor: 'grey', border: 'none', filter: 'grayscale(80%)'}}>
+            <Stack justifyContent={'center'} width={'150px'}>
                 {children}
             </Stack>
         </Card>
@@ -19,41 +19,31 @@ const GreyCard: FC<{ children: ReactNode }> = ({children}) => {
 
 export const Partners = () => {
     return (
-        <Box pt={'128px'}>
+        <Box pt={{md: '128px', sm: '128px'}}>
             <Container maxWidth={'xl'}>
                 <Stack gap={'64px'}>
                     <Typography variant={'h2'} textAlign={'center'}>Partners</Typography>
-                    <Grid columns={30} container spacing={'16px'}>
-                        <Grid item lg={6}>
-                            <GreyCard>
-                                <Image src={lavaLogo} alt={'G-LOK logo'}/>
-                            </GreyCard>
-                        </Grid>
+                    <Stack direction={'row'} gap={'16px'} flexWrap={'wrap'} alignItems={'center'} justifyContent={'center'}>
+                        <GreyCard>
+                            <Image src={lavaLogo} alt={'Lava logo'}/>
+                        </GreyCard>
 
-                        <Grid item lg={6}>
-                            <GreyCard>
-                                <Image src={realLogo} alt={'G-LOK logo'}/>
-                            </GreyCard>
-                        </Grid>
+                        <GreyCard>
+                            <Image src={realLogo} alt={'Realresearch logo'}/>
+                        </GreyCard>
 
-                        <Grid item lg={6}>
-                            <GreyCard>
-                                <Image src={glokLogo} alt={'G-LOK logo'}/>
-                            </GreyCard>
-                        </Grid>
+                        <GreyCard>
+                            <Image src={glokLogo} alt={'G-LOK logo'}/>
+                        </GreyCard>
 
-                        <Grid item lg={6}>
-                            <GreyCard>
-                                <Image src={termLogo} alt={'G-LOK logo'}/>
-                            </GreyCard>
-                        </Grid>
+                        <GreyCard>
+                            <Image src={termLogo} alt={'G-LOK logo'}/>
+                        </GreyCard>
 
-                        <Grid item lg={6}>
-                            <GreyCard>
-                                <Image src={walaLogo} alt={'G-LOK logo'}/>
-                            </GreyCard>
-                        </Grid>
-                    </Grid>
+                        <GreyCard>
+                            <Image src={walaLogo} alt={'G-LOK logo'}/>
+                        </GreyCard>
+                    </Stack>
                 </Stack>
             </Container>
         </Box>

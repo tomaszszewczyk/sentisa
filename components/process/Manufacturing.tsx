@@ -1,8 +1,12 @@
-import {Grid, Stack, Typography} from "@mui/material";
+import {Box, Grid, Stack, Typography} from "@mui/material";
 import {VerticalHeader} from "./VertivalHeader";
 import {FC} from "react";
 import Image from "next/image";
 import bulbIcon from "../../public/img/bulb-icon.svg";
+import electromobilityIcon from "../../public/img/electromobility.svg";
+import industryIcon from "../../public/img/industry 4.0.svg";
+import smartcityIcon from "../../public/img/smartcity.svg";
+import logisticIcon from "../../public/img/logistic.svg";
 
 interface CardProps {
     icon: any
@@ -12,8 +16,10 @@ interface CardProps {
 
 const Card: FC<CardProps> = ({icon, alt, text}) => {
     return (
-        <Stack alignItems={'center'} gap={'32px'}>
+        <Stack alignItems={"center"} direction={{lg: 'column', md: 'row'}} gap={{md: '32px', sm: '16px'}} flexShrink={0}>
+            <Box width={{md: 'unset', sm: '32px'}}>
             <Image src={icon} alt={alt}/>
+            </Box>
             <Typography component='p' variant={'h3'}>{text}</Typography>
         </Stack>
     )
@@ -21,11 +27,11 @@ const Card: FC<CardProps> = ({icon, alt, text}) => {
 
 export const Manufacturing = () => {
     return (
-        <Stack direction={'row'} gap={'128px'} alignItems={'center'}>
+        <Stack direction={'row'} gap={{lg: '128px', md: '64px', sm: '16px'}} alignItems={{lg: 'center', sm: 'flex-start'}}>
             <VerticalHeader text={'Manufacturing'}/>
 
-            <Stack gap={'128px'} width={'100%'}>
-                <Stack gap={'48px'}>
+            <Stack gap={{lg: '128px', md: '64px', sm: '32px'}} width={'100%'}>
+                <Stack gap={{lg: '48px', md: '32px', sm: '16px'}}>
                     <Typography variant={'h3'}>
                         CE Certification
                     </Typography>
@@ -35,7 +41,7 @@ export const Manufacturing = () => {
                     </Typography>
 
                     <Typography variant={'h3'}>
-                        Electronics Manufaturing Service
+                        Electronics Manufacturing Service
                     </Typography>
 
                     <Typography variant={'h3'}>
@@ -47,29 +53,32 @@ export const Manufacturing = () => {
                     </Typography>
                 </Stack>
 
-                <Grid container alignItems={'center'} justifyContent={'space-between'}>
-                    <Grid item>
+                <Grid container
+                      alignItems={{lg: 'center', sm: 'flex-start'}}
+                      justifyContent={{lg: 'space-between', sm: 'space-around'}}
+                      spacing={'32px'}>
+                    <Grid item lg={4} sm={12}>
                         <Stack gap={'32px'}>
-                            <Card icon={bulbIcon}
-                                  alt={'Żarówka'}
+                            <Card icon={logisticIcon}
+                                  alt={'Roadsigns'}
                                   text={'Logistics'}/>
-                            <Card icon={bulbIcon}
-                                  alt={'Żarówka'}
+                            <Card icon={electromobilityIcon}
+                                  alt={'Electric car'}
                                   text={'Electromobility'}/>
                         </Stack>
                     </Grid>
-                    <Grid item>
+                    <Grid item lg={4} sm={12}>
                         <Card icon={bulbIcon}
                               alt={'Żarówka'}
                               text={'Your product'}/>
                     </Grid>
-                    <Grid item>
+                    <Grid item lg={4} sm={12}>
                         <Stack gap={'32px'}>
-                            <Card icon={bulbIcon}
+                            <Card icon={smartcityIcon}
                                   alt={'Smart city'}
-                                  text={'Logistics'}/>
-                            <Card icon={bulbIcon}
-                                  alt={'Żarówka'}
+                                  text={'Smart city'}/>
+                            <Card icon={industryIcon}
+                                  alt={'Industry'}
                                   text={'Industry 4.0'}/>
                         </Stack>
                     </Grid>

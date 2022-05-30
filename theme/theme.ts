@@ -36,31 +36,53 @@ export const theme = createTheme( {
         h1: {
             fontFamily: 'Roboto',
             fontWeight: '500',
-            fontSize: '80px'
+            fontSize: '80px',
+            [breakpointsTheme.breakpoints.down('lg')]: {
+                fontSize: '44px',
+            },
         },
         h2: {
             fontFamily: 'Roboto',
             fontWeight: '600',
             letterSpacing: '10px',
             textTransform: 'uppercase',
-            fontSize: '80px'
+            fontSize: '80px',
+            [breakpointsTheme.breakpoints.down('md')]: {
+                fontSize: '32px',
+                letterSpacing: '5px',
+            },
         },
         h3: {
             fontFamily: 'Roboto',
             fontWeight: '700',
             letterSpacing: '4px',
             textTransform: 'uppercase',
-            fontSize: '20px'
+            fontSize: '20px',
+            [breakpointsTheme.breakpoints.down('md')]: {
+                fontSize: '16px',
+                letterSpacing: '1px',
+            },
+        },
+        h5: {
+            fontFamily: 'Roboto',
         },
         subtitle1: {
             fontFamily: 'Roboto',
             fontWeight: '400',
             fontSize: '16px'
         },
+        body1: {
+            fontFamily: 'Roboto',
+            fontWeight: '300',
+            fontSize: '18px'
+        },
         body2: {
             fontFamily: 'Roboto',
             fontWeight: '300',
-            fontSize: '24px'
+            fontSize: '24px',
+            [breakpointsTheme.breakpoints.down('md')]: {
+                fontSize: '16px',
+            },
         }
     },
     palette: {
@@ -83,6 +105,7 @@ export const theme = createTheme( {
             },
             styleOverrides: {
                 root: {
+                    borderRadius: 0,
                     ':focus': {
                         outline: 'white solid 2px',
                         outlineOffset: '3px',

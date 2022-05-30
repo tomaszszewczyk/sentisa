@@ -33,10 +33,10 @@ export const ProjectBody: FC<BlogBodyProps> = ({project, source}) => {
     return (
         <>
             <Box>
-                <Container maxWidth={'lg'}>
+                <Container maxWidth={'xl'}>
                     <Stack pt={'100px'} pb={'64px'} gap={'16px'}>
                         <Typography variant={'h1'}>{project.title}</Typography>
-                        <Typography component='p' variant={'subtitle1'}>{project.desc}</Typography>
+                        <Typography component='p' variant={'body2'}>{project.desc}</Typography>
                     </Stack>
                 </Container>
             </Box>

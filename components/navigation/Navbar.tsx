@@ -10,7 +10,7 @@ export const Navbar = () => {
         <Box>
             <Container maxWidth={'xl'}>
                 <Stack direction={'row'} justifyContent={'space-between'} pt={'32px'} pb={'32px'} alignItems={'center'}>
-                    <Box maxWidth={'100px'}>
+                    <Box maxWidth={'150px'}>
                         <ImageLink label={'Przejdź na stronę główną'}
                                    src={logo}
                                    alt={'Logo Sentisa'}

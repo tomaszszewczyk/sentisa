@@ -6,5 +6,5 @@ interface VerticalHeaderProps {
 }
 
 export const VerticalHeader: FC<VerticalHeaderProps> = ({text}) =>
-    <Typography variant={'h2'} sx={{writingMode: 'vertical-lr'}}>{text}</Typography>
+    <Typography variant={'h2'} sx={{writingMode: 'vertical-lr'}} alignSelf={'flex-start'}>{text}</Typography>
 

@@ -45,10 +45,10 @@ const MobileMenu: FC<NavigationProps> = ({links}) => {
             }}>
                 <Stack justifyContent={"space-between"} height={'100%'}>
                     <Stack direction={'row'} justifyContent={'space-between'} pt={'32px'} pb={'32px'}>
-                        <Box maxWidth={'196px'}>
+                        <Box maxWidth={'150px'}>
                             <ImageLink label={'Przejdź na stronę główną'}
                                        src={logo}
-                                       alt={'Logo Biuro Rachunkowe Joanna Bączar'}
+                                       alt={'Logo Sentisa'}
                                        url={'/'}/>
                         </Box>
                         <Button onClick={() => setOpened(false)}>

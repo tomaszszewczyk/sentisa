@@ -1,25 +1,28 @@
-<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_104_88)">
-<path d="M9.28998 49.52L7.50998 49.97L9.82998 40.89L40.63 10.08" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
-<path d="M47.4 16.85L16.59 47.65L12.76 48.63" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
-<path d="M42.92 12.37L47.4 16.85" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
-<path d="M47.4 16.85L48.78 15.47C49.2887 14.9584 49.5742 14.2664 49.5742 13.545C49.5742 12.8236 49.2887 12.1315 48.78 11.62L45.87 8.69995C45.3584 8.19127 44.6664 7.90576 43.945 7.90576C43.2236 7.90576 42.5315 8.19127 42.02 8.69995L40.63 10.09" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
-<path d="M44.02 13.47L16.38 41.1" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
-<path d="M10.73 41.57L13.86 44.71" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
-<path d="M40.62 50.37L27.39 37.14" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
-<path d="M39.75 30.01L53.85 44.12L44.11 53.86" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
-<path d="M17.3 27.05L3.85999 13.61L13.6 3.85999L29.99 20.25" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
-<path d="M49.35 39.92L47.57 41.71" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
-<path d="M45.41 35.98L43.62 37.77" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
-<path d="M41.46 32.04L39.68 33.82" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
-<path d="M25.69 16.26L23.9 18.04" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
-<path d="M21.74 12.31L18.86 15.2" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
-<path d="M17.8 8.37L16.01 10.16" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
-<path d="M45.41 35.98L42.52 38.86" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#4BF59A;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10;}
+</style>
+<g id="_x38_">
+	<g>
+		<polyline class="st0" points="7,44 5.36,44.42 7.49,36.07 35.83,7.72 		"/>
+		<polyline class="st0" points="42.06,13.95 13.72,42.29 10.19,43.19 		"/>
+		<line class="st0" x1="37.94" y1="9.83" x2="42.06" y2="13.95"/>
+		<path class="st0" d="M42.06,13.95l1.27-1.27c0.98-0.98,0.98-2.56,0-3.54l-2.68-2.68c-0.98-0.98-2.56-0.98-3.54,0l-1.27,1.27"/>
+		<line class="st0" x1="38.95" y1="10.84" x2="13.52" y2="36.26"/>
+		<line class="st0" x1="8.33" y1="36.7" x2="11.21" y2="39.58"/>
+	</g>
+	<line class="st0" x1="35.82" y1="44.79" x2="23.65" y2="32.61"/>
+	<polyline class="st0" points="35.02,26.05 48,39.04 39.03,48 	"/>
+	<polyline class="st0" points="14.37,23.33 2,10.97 10.97,2 26.04,17.08 	"/>
+	<line class="st0" x1="43.85" y1="35.18" x2="42.21" y2="36.82"/>
+	<line class="st0" x1="40.23" y1="31.55" x2="38.58" y2="33.19"/>
+	<line class="st0" x1="36.6" y1="27.92" x2="34.95" y2="29.56"/>
+	<line class="st0" x1="22.08" y1="13.41" x2="20.44" y2="15.05"/>
+	<line class="st0" x1="18.45" y1="9.78" x2="15.8" y2="12.43"/>
+	<line class="st0" x1="14.82" y1="6.15" x2="13.18" y2="7.79"/>
+	<line class="st0" x1="40.23" y1="31.55" x2="37.57" y2="34.2"/>
 </g>
-<defs>
-<clipPath id="clip0_104_88">
-<rect width="53.72" height="53.72" fill="white" transform="translate(2 2)"/>
-</clipPath>
-</defs>
 </svg>
